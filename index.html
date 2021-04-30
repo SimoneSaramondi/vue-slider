@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 
     <title>Vue Slider</title>
 
@@ -13,17 +14,21 @@
 </head>
 <body>
 
-    <div class="containerCard">
+    <div id="roof">
+        <div class="containerCard">
 
-        <i class=""></i>
+            <i class="fas fa-arrow-left"></i> <!--Mettere il click-->
 
-        <div class="card">
-            <img :src="" alt="">
-            <div class="boxDot"></div>
+            <div class="card">
+                <img :src="" >
+                <div class="boxDot">
+                    <div class="dot" v-for="img in myImg"></div> <!--Inserire le immagini-->
+                </div>
+            </div>
+
+            <i class="fas fa-arrow-right"></i>
+
         </div>
-
-        <i class=""></i>
-
     </div>
 
     <script src="script.js"></script>
