@@ -1,9 +1,7 @@
 
 var app = new Vue({
     el: '#app',
-    data: {
-
-        indiceMax: 4,
+    data: {        
 
         indice: 0,       
 
@@ -16,4 +14,4 @@ var app = new Vue({
     },
 
 
-  })
+  });
