@@ -16,7 +16,27 @@
 
     <div id="app">
 
-        <img v-bind:src="immagini[indice]" alt="">
+        <div class="container">
+
+            <div class="arrow-container" v-on:click="indice--" >
+                <i class="fas fa-arrow-left"></i>
+            </div>
+
+            <div class="img-container">
+                <img v-bind:src="immagini[indice]" alt="">
+
+                <div class="boxDot">
+                    <div class="dot" v-for="element in immagini" ></div>
+                </div>
+            </div>
+
+            <div class="arrow-container" v-on:click="indice++">
+                <i class="fas fa-arrow-right"></i>
+            </div>            
+
+        </div>
+
+        
 
         
     </div>
