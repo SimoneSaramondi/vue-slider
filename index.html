@@ -14,21 +14,11 @@
 </head>
 <body>
 
-    <div id="roof">
-        <div class="containerCard">
+    <div id="app">
 
-            <i class="fas fa-arrow-left"></i> <!--Mettere il click-->
+        <img v-bind:src="immagini[indice]" alt="">
 
-            <div class="card">
-                <img :src="" >
-                <div class="boxDot">
-                    <div class="dot" v-for="img in myImg"></div> <!--Inserire le immagini-->
-                </div>
-            </div>
-
-            <i class="fas fa-arrow-right"></i>
-
-        </div>
+        
     </div>
 
     <script src="script.js"></script>

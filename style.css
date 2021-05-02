@@ -1,31 +1,5 @@
-.containerCard{
-    width: 650px;
-    margin: auto;
-    border: 1px solid blue;
-    display: flex;
-}
-.containerCard i{
-    padding-top: 200px;
-}
-.card{
-    height: 400px;
-    width: 500px;
-    margin: auto;
-    border: 1px solid;
-}
-.boxDot{
-    width: 60%;
-    margin: auto;
-    margin-top: 320px;
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 20px;
-    padding: 10px;
-    display: flex;
-}
-.dot{
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    border: 1px solid;
-    /*Distanziarli*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
