@@ -23,10 +23,10 @@
             </div>
 
             <div class="img-container">
-                <img v-bind:src="immagini[indice]" alt="" >
+                <img v-bind:src="immagini[indice % immagini.length]" alt="" >
 
                 <div class="boxDot">
-                    <div class="dot" v-for="element in immagini" ></div>
+                    <div class="dot" v-for="element in immagini"></div>
                 </div>
             </div>
 

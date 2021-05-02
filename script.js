@@ -10,6 +10,8 @@ var app = new Vue({
             "https://www.corriere.it/methode_image/2019/04/14/Sport/Foto%20Sport%20-%20Trattate/cairoli-klaC-U31101298247247wmG-656x492@Corriere-Web-Sezioni.PNG",
             "https://www.repstatic.it/content/nazionale/img/2020/12/06/184816776-2a24aca9-2ba5-4c41-99a2-5805dfaf223a.jpg"
         ],
+
+        
         
     },
 
