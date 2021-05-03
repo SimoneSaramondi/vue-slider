@@ -22,6 +22,7 @@ var app = new Vue({
         //-1 per indietro
         changeImg(direction){
             this.indice += direction;
+            //Modificare per il cambio con frecce
         }
 
         //Uso la stessa funzione per cambiare immagini con la tastiera

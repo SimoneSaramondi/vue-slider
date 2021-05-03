@@ -28,4 +28,9 @@
     height: 20px;
     border: 1px solid;
     border-radius: 50%;
+    background-color: aliceblue;
+}
+
+.dot.active{
+    background-color: aquamarine;
 }
