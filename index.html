@@ -16,7 +16,8 @@
 
     <div id="app">
 
-        <div class="container" tabindex="-1" @keyup.left="changeImg(-1)" @keyup.right="changeImg(+1)">
+        <div class="container" tabindex="-1" @keyup.left="changeImg(-1)" @keyup.right="changeImg(+1)"
+        @mouseover="pause()" @mouseout="play()">
 
             <!--Freccia sinistra-->
             <div class="arrow-container">
@@ -25,11 +26,14 @@
 
             <!--Immagini-->
             <div class="img-container">
-                <img v-bind:src="immagini[indice % immagini.length]" alt="" >
+                <img v-bind:src="immagini[indice]" alt="" >
 
                 <!--Puntini-->
                 <div class="boxDot">
-                    <div href="#" class="dot" :class="{active: indice === index}" :data-index="index" v-for="(element, index) in immagini" @click.prevent="onDotClick(index)"></div>
+
+                    <div href="#" class="dot" :class="{active: indice === index}" :data-index="index"
+                    v-for="(element, index) in immagini" @click.prevent="onDotClick(index)"></div>
+
                 </div>
             </div>
 
@@ -37,9 +41,7 @@
             <div class="arrow-container" >
                 <i class="fas fa-arrow-right" @click="changeImg(+1)"></i>
             </div>            
-
-        </div>       
-
+        </div>  
         
     </div>
 
