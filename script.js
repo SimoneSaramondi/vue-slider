@@ -13,7 +13,26 @@ var app = new Vue({
 
         
         
+        
     },
+
+    methods:{
+        //click sulle frecce
+        //+1 per avanti
+        //-1 per indietro
+        changeImg(direction){
+            this.indice += direction;
+        }
+
+        //Uso la stessa funzione per cambiare immagini con la tastiera
+    },
+
+    //specifico a vue cosa deve fare quanto arriva mounted
+    mounted:function(){
+        //Faccio focus su la classe container
+        //quindi come se fosse gia in focus dal ricaricamento della pagina
+        document.querySelector(".container").focus()
+    }
 
 
   });

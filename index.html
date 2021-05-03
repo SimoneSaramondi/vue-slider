@@ -16,27 +16,29 @@
 
     <div id="app">
 
-        <div class="container">
+        <div class="container" tabindex="-1" @keyup.left="changeImg(-1)" @keyup.right="changeImg(+1)">
 
-            <div class="arrow-container" v-on:click="indice--" >
-                <i class="fas fa-arrow-left"></i>
+            <!--Freccia sinistra-->
+            <div class="arrow-container">
+                <i class="fas fa-arrow-left" @click="changeImg(-1)"></i>
             </div>
 
+            <!--Immagini-->
             <div class="img-container">
                 <img v-bind:src="immagini[indice % immagini.length]" alt="" >
 
+                <!--Puntini-->
                 <div class="boxDot">
                     <div class="dot" v-for="element in immagini"></div>
                 </div>
             </div>
 
-            <div class="arrow-container" v-on:click="indice++">
-                <i class="fas fa-arrow-right"></i>
+            <!--Freccia destra-->
+            <div class="arrow-container" >
+                <i class="fas fa-arrow-right" @click="changeImg(+1)"></i>
             </div>            
 
-        </div>
-
-        
+        </div>       
 
         
     </div>
