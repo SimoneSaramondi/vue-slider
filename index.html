@@ -29,7 +29,7 @@
 
                 <!--Puntini-->
                 <div class="boxDot">
-                    <div href="#" class="dot" :class="{active: indice === index}" :data-index="index" v-for="(element, index) in immagini"></div>
+                    <div href="#" class="dot" :class="{active: indice === index}" :data-index="index" v-for="(element, index) in immagini" @click.prevent="onDotClick(index)"></div>
                 </div>
             </div>
 

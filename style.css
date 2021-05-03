@@ -31,6 +31,12 @@
     background-color: aliceblue;
 }
 
-.dot.active{
+.dot.active{    
     background-color: aquamarine;
+}
+
+.container:focus,
+.container:active{
+    /*Per eliminare il puntino del focus*/
+    outline: none;
 }

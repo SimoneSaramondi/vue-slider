@@ -23,16 +23,25 @@ var app = new Vue({
         changeImg(direction){
             this.indice += direction;
             //Modificare per il cambio con frecce
-        }
+        },
 
         //Uso la stessa funzione per cambiare immagini con la tastiera
+
+        //Mi restituisce l'indice del pallino su cui clicco
+        onDotClick(clickIndex){
+            this.indice = clickIndex;
+        },
     },
 
     //specifico a vue cosa deve fare quanto arriva mounted
     mounted:function(){
         //Faccio focus su la classe container
         //quindi come se fosse gia in focus dal ricaricamento della pagina
-        document.querySelector(".container").focus()
+        document.querySelector(".container").focus();
+
+        setInterval(() => {
+            this.changeImg(+1)
+        }, 5000)
     }
 
 
